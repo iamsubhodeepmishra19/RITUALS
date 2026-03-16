@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RITUALS</title>
+    <!-- bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- header section starts here -->
+    <header>
+      <div class="header-top p-3">
+        <div class="container d-flex">
+          <div class="hdr-top-cnt mx-auto">
+            Exclusive 20% off in any product
+          </div>
+          <div class="login-sec">
+            <a href="">Login / Sign up </a>
+          </div>
+        </div>
+      </div>
+      <div class="header-bottom">
+        <div class="container">
+          <nav class="navbar navbar-expand-xl p-0">
+            <div class="container-fluid p-0">
+              <div class="nav-logo">
+                <a href="index.html">
+                  <img
+                    class="w-100 h-100 object-fit-cover"
+                    src="./assets/nav-logo.png"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" id="navbarSupportedContent">
+                <ul class="navbar-nav my-0">
+                  <li class="nav-item">
+                    <a class="nav-link active m-0" aria-current="page" href="#"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Shop
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                </ul>
+
+                <form
+                  class="nav-form d-flex justify-content-between bg-white rounded-pill position-relative mx-auto"
+                  role="search"
+                  id="form"
+                >
+                  <input
+                    class="form-control border-0"
+                    type="search"
+                    placeholder="What are you looking for"
+                    aria-label="Search"
+                  />
+                  <input type="submit" value="" class="submit-btn border-0" />
+                  <svg
+                    class="position-absolute"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M21 21L16.66 16.66M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z"
+                      stroke="#570835"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </form>
+
+                <div class="nav-icons d-flex">
+                  <div class="user">
+                    <a href="">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12 13C14.7614 13 17 10.7614 17 8C17 5.23858 14.7614 3 12 3C9.23858 3 7 5.23858 7 8C7 10.7614 9.23858 13 12 13ZM12 13C14.1217 13 16.1566 13.8429 17.6569 15.3431C19.1571 16.8434 20 18.8783 20 21M12 13C9.87827 13 7.84344 13.8429 6.34315 15.3431C4.84285 16.8434 4 18.8783 4 21"
+                          stroke="#570835"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="heart mx-3">
+                    <a href="">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M2 9.49998C2.00002 8.38718 2.33759 7.30056 2.96813 6.38364C3.59867 5.46672 4.49252 4.76264 5.53161 4.36438C6.5707 3.96612 7.70616 3.89242 8.78801 4.15302C9.86987 4.41362 10.8472 4.99626 11.591 5.82398C11.6434 5.87999 11.7067 5.92465 11.7771 5.95518C11.8474 5.98571 11.9233 6.00146 12 6.00146C12.0767 6.00146 12.1526 5.98571 12.2229 5.95518C12.2933 5.92465 12.3566 5.87999 12.409 5.82398C13.1504 4.99088 14.128 4.40335 15.2116 4.13958C16.2952 3.87581 17.4335 3.94833 18.4749 4.34746C19.5163 4.7466 20.4114 5.45343 21.0411 6.37388C21.6708 7.29433 22.0053 8.38474 22 9.49998C22 11.79 20.5 13.5 19 15L13.508 20.313C13.3217 20.527 13.0919 20.6989 12.834 20.8173C12.5762 20.9357 12.296 20.9978 12.0123 20.9996C11.7285 21.0014 11.4476 20.9428 11.1883 20.8277C10.9289 20.7126 10.697 20.5436 10.508 20.332L5 15C3.5 13.5 2 11.8 2 9.49998Z"
+                          stroke="#570835"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="cart">
+                    <a href="">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M2.23698 2.28798C2.04815 2.22513 1.84208 2.23986 1.66411 2.32894C1.48613 2.41802 1.35084 2.57415 1.28798 2.76298C1.22513 2.95182 1.23986 3.15789 1.32894 3.33586C1.41802 3.51383 1.57415 3.64913 1.76298 3.71198L2.02798 3.79998C2.70398 4.02498 3.15198 4.17598 3.48098 4.32898C3.79298 4.47398 3.92798 4.59098 4.01398 4.71098C4.09998 4.83098 4.16898 4.99498 4.20798 5.33698C4.24898 5.69798 4.24998 6.16998 4.24998 6.88298V9.55498C4.24998 10.922 4.24998 12.025 4.36698 12.892C4.48698 13.792 4.74698 14.55 5.34898 15.152C5.94998 15.754 6.70898 16.012 7.60898 16.134C8.47498 16.25 9.57798 16.25 10.945 16.25H19C19.1989 16.25 19.3897 16.171 19.5303 16.0303C19.671 15.8897 19.75 15.6989 19.75 15.5C19.75 15.3011 19.671 15.1103 19.5303 14.9697C19.3897 14.829 19.1989 14.75 19 14.75H11C9.56498 14.75 8.56398 14.748 7.80798 14.647C7.07498 14.548 6.68598 14.367 6.40898 14.091C6.3082 13.99 6.22233 13.8752 6.15398 13.75H16.059C16.507 13.75 16.901 13.75 17.229 13.715C17.583 13.676 17.927 13.591 18.249 13.378C18.573 13.165 18.786 12.883 18.961 12.572C19.122 12.286 19.278 11.923 19.454 11.511L19.921 10.421C20.306 9.52498 20.627 8.77398 20.788 8.16398C20.956 7.52698 21 6.86198 20.604 6.26098C20.208 5.66098 19.579 5.43898 18.928 5.34198C18.303 5.24998 17.487 5.24998 16.511 5.24998H5.70698L5.69798 5.16698C5.64298 4.68198 5.52198 4.23698 5.23098 3.83398C4.93998 3.42998 4.55598 3.17398 4.11398 2.96898C3.69698 2.77498 3.16798 2.59898 2.54198 2.38898L2.23698 2.28798ZM5.74998 6.74998V9.49998C5.74998 10.672 5.75098 11.554 5.80698 12.25H16.022C16.518 12.25 16.831 12.249 17.068 12.223C17.287 12.2 17.371 12.161 17.424 12.126C17.477 12.091 17.546 12.029 17.654 11.837C17.771 11.629 17.894 11.342 18.09 10.887L18.519 9.88698C18.933 8.91898 19.209 8.27098 19.338 7.78098C19.464 7.30498 19.4 7.16098 19.352 7.08698C19.303 7.01398 19.195 6.89798 18.708 6.82698C18.207 6.75198 17.503 6.74998 16.451 6.74998H5.74998ZM5.24998 19.5C5.24998 20.0967 5.48703 20.669 5.90899 21.091C6.33095 21.5129 6.90324 21.75 7.49998 21.75C8.09672 21.75 8.66901 21.5129 9.09097 21.091C9.51293 20.669 9.74998 20.0967 9.74998 19.5C9.74998 18.9032 9.51293 18.3309 9.09097 17.909C8.66901 17.487 8.09672 17.25 7.49998 17.25C6.90324 17.25 6.33095 17.487 5.90899 17.909C5.48703 18.3309 5.24998 18.9032 5.24998 19.5ZM7.49998 20.25C7.30107 20.25 7.1103 20.171 6.96965 20.0303C6.829 19.8897 6.74998 19.6989 6.74998 19.5C6.74998 19.3011 6.829 19.1103 6.96965 18.9697C7.1103 18.829 7.30107 18.75 7.49998 18.75C7.69889 18.75 7.88966 18.829 8.03031 18.9697C8.17096 19.1103 8.24998 19.3011 8.24998 19.5C8.24998 19.6989 8.17096 19.8897 8.03031 20.0303C7.88966 20.171 7.69889 20.25 7.49998 20.25ZM16.5 21.75C15.9032 21.75 15.3309 21.5129 14.909 21.091C14.487 20.669 14.25 20.0967 14.25 19.5C14.25 18.9032 14.487 18.3309 14.909 17.909C15.3309 17.487 15.9032 17.25 16.5 17.25C17.0967 17.25 17.669 17.487 18.091 17.909C18.5129 18.3309 18.75 18.9032 18.75 19.5C18.75 20.0967 18.5129 20.669 18.091 21.091C17.669 21.5129 17.0967 21.75 16.5 21.75ZM15.75 19.5C15.75 19.6989 15.829 19.8897 15.9697 20.0303C16.1103 20.171 16.3011 20.25 16.5 20.25C16.6989 20.25 16.8897 20.171 17.0303 20.0303C17.171 19.8897 17.25 19.6989 17.25 19.5C17.25 19.3011 17.171 19.1103 17.0303 18.9697C16.8897 18.829 16.6989 18.75 16.5 18.75C16.3011 18.75 16.1103 18.829 15.9697 18.9697C15.829 19.1103 15.75 19.3011 15.75 19.5Z"
+                          fill="#570835"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- header section ends here -->
+
+    <main>
+      <!-- banner section starts here -->
+      <div class="banner-sec section-padding">
+        <div class="container">
+          <div class="banner-cntn">
+            <div class="title-sub">
+              SPECIAL OFFER <span class="ms-4">50% OFF</span>
+            </div>
+            <h1
+              class="title1 border-top border-bottom border-black text-capitalize pt-3"
+            >
+              Wedding <br />
+              Cards
+            </h1>
+            <div class="title-sub">Elegant and best quality cards</div>
+            <div class="banner-btn">
+              <a href="" class="primary-btn text-capitalize me-4">Shop Now</a>
+              <a href="" class="secondary-btn">Explore Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- banner section ends here -->
+
+      <!-- featured categiries section -->
+      <div class="catgry-sec section-padding">
+        <div class="container">
+          <h2 class="title2 text-center">Featured Categories</h2>
+          <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+              <div class="catgry-img-card">
+                <div class="catgry-img">
+                  <img
+                    class="w-100 h100 object-fit-cover"
+                    src="./assets/cat1.png"
+                    alt=""
+                  />
+                </div>
+                <div class="catgry-hdr text-white text-center">
+                  Wedding Cards Collections
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+              <div class="catgry-img-card">
+                <div class="catgry-img">
+                  <img
+                    class="w-100 h100 object-fit-cover"
+                    src="./assets/cat2.png"
+                    alt=""
+                  />
+                </div>
+                <div class="catgry-hdr text-white text-center">
+                  Wedding Cards Collections
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+              <div class="catgry-img-card">
+                <div class="catgry-img">
+                  <img
+                    class="w-100 h100 object-fit-cover"
+                    src="./assets/cat3.png"
+                    alt=""
+                  />
+                </div>
+                <div class="catgry-hdr text-white text-center">
+                  Wedding Cards Collections
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+              <div class="catgry-img-card">
+                <div class="catgry-img">
+                  <img
+                    class="w-100 h100 object-fit-cover"
+                    src="./assets/cat4.png"
+                    alt=""
+                  />
+                </div>
+                <div class="catgry-hdr text-white text-center">
+                  Wedding Cards Collections
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+              <div class="catgry-img-card">
+                <div class="catgry-img">
+                  <img
+                    class="w-100 h100 object-fit-cover"
+                    src="./assets/cat5.png"
+                    alt=""
+                  />
+                </div>
+                <div class="catgry-hdr text-white text-center">
+                  Wedding Cards Collections
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+              <div class="catgry-img-card">
+                <div class="catgry-img">
+                  <img
+                    class="w-100 h100 object-fit-cover"
+                    src="./assets/cat6.png"
+                    alt=""
+                  />
+                </div>
+                <div class="catgry-hdr text-white text-center">
+                  Wedding Cards Collections
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- featured categiries section -->
+    </main>
+    <!-- bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <!-- jquery cdn -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- custom js -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
