@@ -294,7 +294,7 @@ a {
     bottom: -2px;
   }
   .navbar-toggler::before {
-    top: 5px;
+    top: 2px;
   }
   .navbar-toggler.activeshow .navbar-toggler-icon {
     transform: translateX(-30px);
