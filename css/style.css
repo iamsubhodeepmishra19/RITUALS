@@ -9,7 +9,9 @@
 ul {
   list-style-type: none !important;
 }
-
+p {
+  margin: 0 !important;
+}
 a {
   display: inline-block;
   text-decoration: none;
@@ -46,14 +48,76 @@ a {
   font-family: "Poppins", sans-serif;
   border-radius: 100px;
   color: white;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.primary-btn:hover {
+  color: var(--primary-color);
+  outline: 1px solid var(--primary-color);
+}
+.primary-btn::after {
+  content: "";
+  background: #fff;
+  position: absolute;
+  z-index: -1;
+  padding: 0.85em 0.75em;
+  display: block;
+}
+.primary-btn[class^="grow"]::after {
+  transition: all 0.3s ease;
+}
+.primary-btn[class^="grow"]:hover::after {
+  transition: all 0.3s ease-out;
+}
+.primary-btn.grow_skew_forward::after {
+  left: -20%;
+  right: -20%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(-45deg) scale(0, 1);
+  transform-origin: center;
+}
+.primary-btn.grow_skew_forward:hover::after {
+  transform: skewX(-45deg) scale(1, 1);
 }
 .secondary-btn {
   padding: 16px 32px;
-  border: 1px solid var(--primary-color);
-  color: var(--primary-color) !important;
+  outline: 1px solid var(--primary-color);
+  color: var(--primary-color);
   font-family: "Poppins", sans-serif;
   border-radius: 100px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.secondary-btn:hover {
   color: white;
+}
+.secondary-btn::after {
+  content: "";
+  background: var(--primary-color);
+  position: absolute;
+  z-index: -1;
+  padding: 0.85em 0.75em;
+  display: block;
+}
+.secondary-btn[class^="grow"]::after {
+  transition: all 0.3s ease;
+}
+.secondary-btn[class^="grow"]:hover::after {
+  transition: all 0.3s ease-out;
+}
+.secondary-btn.grow_skew_backward::after {
+  left: -20%;
+  right: -20%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(45deg) scale(0, 1);
+  transform-origin: center;
+}
+.secondary-btn.grow_skew_backward:hover::after {
+  transform: skewX(45deg) scale(1, 1);
 }
 /* navbar code */
 .header-top * {
@@ -79,10 +143,24 @@ a {
   margin-left: 40px;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
+  position: relative;
+}
+.nav-link::before {
+  content: "";
+  position: absolute;
+  background-color: var(--primary-color);
+  height: 2px;
+  width: 0%;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s linear;
 }
 .nav-link.active {
   color: var(--primary-color) !important;
-  text-decoration: underline;
+}
+.nav-link.active::before,
+.nav-link:hover::before {
+  width: 100%;
 }
 .nav-logo > a {
   max-width: 127px;
@@ -112,6 +190,13 @@ a {
   right: 8px;
   z-index: 1;
 }
+.submit-btn:hover + svg path,
+.nav-icons > .user svg:hover path,
+.nav-icons > .heart svg:hover path,
+.nav-icons > .cart svg:hover path {
+  fill: var(--primary-color);
+  stroke: rgb(241, 109, 250);
+}
 .form-control::placeholder {
   font-family: "Inter", sans-serif;
   font-weight: 500;
@@ -134,7 +219,7 @@ a {
 /* banner section code */
 .banner-sec {
   min-height: calc(100vh - 108px);
-  background: url("../assets/banner.png") no-repeat center/contain;
+  background: url("../assets/banner.png") no-repeat center/cover;
   padding: 60px 0 100px;
 }
 .banner-cntn {
@@ -157,6 +242,10 @@ a {
 }
 .catgry-img {
   margin-bottom: 1rem;
+}
+.catgry-img:hover {
+  transform: scale(1.1);
+  transition: 0.5s linear;
 }
 .catgry-img-card {
   background: var(--primary-color);
@@ -189,6 +278,7 @@ a {
     width: 25px;
     background: var(--primary-color);
     position: relative;
+    transition: 0.5s linear;
   }
   .navbar-toggler::after,
   .navbar-toggler::before {
@@ -198,9 +288,10 @@ a {
     height: 2px;
     left: 0;
     right: 0;
+    transition: 0.5s linear;
   }
   .navbar-toggler::after {
-    bottom: -3px;
+    bottom: -2px;
   }
   .navbar-toggler::before {
     top: 5px;
@@ -264,7 +355,28 @@ a {
   .title-sub span {
     font-size: 18px !important;
   }
+  .primary-btn,
+  .secondary-btn {
+    padding: 10px 30px;
+  }
   /* navbar code */
+  .header-top {
+    padding: 10px 0 !important;
+  }
+  .header-top .hdr-cntn {
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .hdr-top-cnt {
+    width: 100%;
+  }
+  .header-bottom {
+    padding: 15px 0;
+  }
+  .nav-logo > a {
+    width: 102px;
+  }
   .offcanvas {
     width: 90% !important;
   }

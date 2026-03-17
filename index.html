@@ -18,12 +18,12 @@
     <!-- header section starts here -->
     <header>
       <div class="header-top p-3">
-        <div class="container d-flex">
-          <div class="hdr-top-cnt mx-auto">
-            Exclusive 20% off in any product
-          </div>
-          <div class="login-sec">
-            <a href="">Login / Sign up </a>
+        <div class="container">
+          <div class="hdr-cntn d-flex">
+            <p class="hdr-top-cnt mx-auto">Exclusive 20% off in any product</p>
+            <div class="login-sec">
+              <a href="#">Login / Sign up</a>
+            </div>
           </div>
         </div>
       </div>
@@ -54,17 +54,20 @@
               <div class="offcanvas offcanvas-end" id="navbarSupportedContent">
                 <ul class="navbar-nav my-0">
                   <li class="nav-item">
-                    <a class="nav-link active m-0" aria-current="page" href="#"
+                    <a
+                      class="nav-link active m-0"
+                      aria-current="page"
+                      href="index.html"
                       >Home</a
                     >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
+                    <a class="nav-link" href="aboutus.html">About Us</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a
                       class="nav-link dropdown-toggle"
-                      href="#"
+                      href="shop.html"
                       role="button"
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
@@ -85,10 +88,10 @@
                     </ul>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Blog</a>
+                    <a class="nav-link" href="blog.html">Blog</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="contact.html">Contact</a>
                   </li>
                 </ul>
 
@@ -99,11 +102,19 @@
                 >
                   <input
                     class="form-control border-0"
+                    id="search-box"
+                    name="user_query"
                     type="search"
                     placeholder="What are you looking for"
                     aria-label="Search"
                   />
-                  <input type="submit" value="" class="submit-btn border-0" />
+                  <input
+                    type="submit"
+                    value=""
+                    class="submit-btn border-0"
+                    id="submit-field"
+                    name="user_action"
+                  />
                   <svg
                     class="position-absolute"
                     width="24"
@@ -124,7 +135,7 @@
 
                 <div class="nav-icons d-flex">
                   <div class="user">
-                    <a href="">
+                    <a href="#">
                       <svg
                         width="24"
                         height="24"
@@ -143,7 +154,7 @@
                     </a>
                   </div>
                   <div class="heart mx-3">
-                    <a href="">
+                    <a href="#">
                       <svg
                         width="24"
                         height="24"
@@ -162,7 +173,7 @@
                     </a>
                   </div>
                   <div class="cart">
-                    <a href="">
+                    <a href="#">
                       <svg
                         width="24"
                         height="24"
@@ -193,19 +204,24 @@
       <div class="banner-sec section-padding">
         <div class="container">
           <div class="banner-cntn">
-            <div class="title-sub">
+            <p class="title-sub">
               SPECIAL OFFER <span class="ms-4">50% OFF</span>
-            </div>
+            </p>
             <h1
               class="title1 border-top border-bottom border-black text-capitalize pt-3"
             >
-              Wedding <br />
-              Cards
+              Wedding Cards
             </h1>
-            <div class="title-sub">Elegant and best quality cards</div>
+            <p class="title-sub">Elegant and best quality cards</p>
             <div class="banner-btn">
-              <a href="" class="primary-btn text-capitalize me-4">Shop Now</a>
-              <a href="" class="secondary-btn">Explore Now</a>
+              <a
+                href="#"
+                class="grow_skew_forward primary-btn text-capitalize me-4"
+                >Shop Now</a
+              >
+              <a href="#" class="grow_skew_backward secondary-btn"
+                >Explore Now</a
+              >
             </div>
           </div>
         </div>
@@ -221,84 +237,84 @@
               <div class="catgry-img-card">
                 <div class="catgry-img">
                   <img
-                    class="w-100 h100 object-fit-cover"
+                    class="w-100 h-100 object-fit-cover"
                     src="./assets/cat1.png"
                     alt=""
                   />
                 </div>
-                <div class="catgry-hdr text-white text-center">
+                <p class="catgry-hdr text-white text-center">
                   Wedding Cards Collections
-                </div>
+                </p>
               </div>
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
               <div class="catgry-img-card">
                 <div class="catgry-img">
                   <img
-                    class="w-100 h100 object-fit-cover"
+                    class="w-100 h-100 object-fit-cover"
                     src="./assets/cat2.png"
                     alt=""
                   />
                 </div>
-                <div class="catgry-hdr text-white text-center">
+                <p class="catgry-hdr text-white text-center">
                   Wedding Cards Collections
-                </div>
+                </p>
               </div>
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
               <div class="catgry-img-card">
                 <div class="catgry-img">
                   <img
-                    class="w-100 h100 object-fit-cover"
+                    class="w-100 h-100 object-fit-cover"
                     src="./assets/cat3.png"
                     alt=""
                   />
                 </div>
-                <div class="catgry-hdr text-white text-center">
+                <p class="catgry-hdr text-white text-center">
                   Wedding Cards Collections
-                </div>
+                </p>
               </div>
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
               <div class="catgry-img-card">
                 <div class="catgry-img">
                   <img
-                    class="w-100 h100 object-fit-cover"
+                    class="w-100 h-100 object-fit-cover"
                     src="./assets/cat4.png"
                     alt=""
                   />
                 </div>
-                <div class="catgry-hdr text-white text-center">
+                <p class="catgry-hdr text-white text-center">
                   Wedding Cards Collections
-                </div>
+                </p>
               </div>
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
               <div class="catgry-img-card">
                 <div class="catgry-img">
                   <img
-                    class="w-100 h100 object-fit-cover"
+                    class="w-100 h-100 object-fit-cover"
                     src="./assets/cat5.png"
                     alt=""
                   />
                 </div>
-                <div class="catgry-hdr text-white text-center">
+                <p class="catgry-hdr text-white text-center">
                   Wedding Cards Collections
-                </div>
+                </p>
               </div>
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
               <div class="catgry-img-card">
                 <div class="catgry-img">
                   <img
-                    class="w-100 h100 object-fit-cover"
+                    class="w-100 h-100 object-fit-cover"
                     src="./assets/cat6.png"
                     alt=""
                   />
                 </div>
-                <div class="catgry-hdr text-white text-center">
+                <p class="catgry-hdr text-white text-center">
                   Wedding Cards Collections
-                </div>
+                </p>
               </div>
             </div>
           </div>
